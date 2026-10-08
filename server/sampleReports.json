@@ -1,0 +1,1902 @@
+[
+  {
+    "_id": "sample-001",
+    "title": "Deep Crater on Main St #1",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.94,
+    "status": "assigned",
+    "department": "Road Works",
+    "reportCount": 1,
+    "createdAt": "2026-10-07T09:41:05.944Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.17395,
+        10.81537
+      ]
+    }
+  },
+  {
+    "_id": "sample-002",
+    "title": "Overflowing Trash Container #2",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.93,
+    "status": "in-progress",
+    "department": "Sanitation",
+    "reportCount": 2,
+    "createdAt": "2026-10-03T21:52:32.954Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1309,
+        10.72971
+      ]
+    }
+  },
+  {
+    "_id": "sample-003",
+    "title": "Uncollected Household Waste #3",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.98,
+    "status": "resolved",
+    "department": "Sanitation",
+    "reportCount": 5,
+    "createdAt": "2026-10-02T14:30:34.321Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12464,
+        10.73615
+      ]
+    }
+  },
+  {
+    "_id": "sample-004",
+    "title": "Non-Functional Streetlight #4",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.93,
+    "status": "pending",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-09-30T16:44:09.860Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.10589,
+        10.81866
+      ]
+    }
+  },
+  {
+    "_id": "sample-005",
+    "title": "Flickering Solar Street Lamp #5",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.83,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-09-29T08:30:52.221Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08178,
+        10.83856
+      ]
+    }
+  },
+  {
+    "_id": "sample-006",
+    "title": "Major Underground Pipe Leak #6",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.85,
+    "status": "in-progress",
+    "department": "Water Supply",
+    "reportCount": 3,
+    "createdAt": "2026-10-02T23:22:44.698Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1077,
+        10.83382
+      ]
+    }
+  },
+  {
+    "_id": "sample-007",
+    "title": "Open Drainage Channel Flood #7",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.94,
+    "status": "resolved",
+    "department": "Water Supply",
+    "reportCount": 3,
+    "createdAt": "2026-10-01T15:49:15.190Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.18367,
+        10.73053
+      ]
+    }
+  },
+  {
+    "_id": "sample-008",
+    "title": "Fallen Tree Blocking Road #8",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.88,
+    "status": "pending",
+    "department": "Parks & Recreation",
+    "reportCount": 1,
+    "createdAt": "2026-10-03T20:37:27.346Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12862,
+        10.81877
+      ]
+    }
+  },
+  {
+    "_id": "sample-009",
+    "title": "Damaged Traffic Signal Light #9",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.91,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-04T02:11:04.479Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08138,
+        10.77611
+      ]
+    }
+  },
+  {
+    "_id": "sample-010",
+    "title": "Severe Pothole #10",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.98,
+    "status": "in-progress",
+    "department": "Road Works",
+    "reportCount": 3,
+    "createdAt": "2026-10-02T04:00:38.845Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16619,
+        10.84391
+      ]
+    }
+  },
+  {
+    "_id": "sample-011",
+    "title": "Deep Crater on Main St #11",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.95,
+    "status": "resolved",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-09-28T22:23:56.134Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.07975,
+        10.7765
+      ]
+    }
+  },
+  {
+    "_id": "sample-012",
+    "title": "Overflowing Trash Container #12",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.87,
+    "status": "pending",
+    "department": "Sanitation",
+    "reportCount": 5,
+    "createdAt": "2026-10-01T16:09:38.694Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08059,
+        10.76409
+      ]
+    }
+  },
+  {
+    "_id": "sample-013",
+    "title": "Uncollected Household Waste #13",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.83,
+    "status": "assigned",
+    "department": "Sanitation",
+    "reportCount": 1,
+    "createdAt": "2026-10-04T08:34:03.404Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.10505,
+        10.80971
+      ]
+    }
+  },
+  {
+    "_id": "sample-014",
+    "title": "Non-Functional Streetlight #14",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.83,
+    "status": "in-progress",
+    "department": "Electrical",
+    "reportCount": 4,
+    "createdAt": "2026-10-02T14:15:38.798Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.14456,
+        10.78387
+      ]
+    }
+  },
+  {
+    "_id": "sample-015",
+    "title": "Flickering Solar Street Lamp #15",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.95,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-04T23:49:58.153Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1799,
+        10.73979
+      ]
+    }
+  },
+  {
+    "_id": "sample-016",
+    "title": "Major Underground Pipe Leak #16",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "pending",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-10-07T13:43:46.527Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19761,
+        10.78799
+      ]
+    }
+  },
+  {
+    "_id": "sample-017",
+    "title": "Open Drainage Channel Flood #17",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.96,
+    "status": "assigned",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-10-06T09:43:16.074Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13632,
+        10.73963
+      ]
+    }
+  },
+  {
+    "_id": "sample-018",
+    "title": "Fallen Tree Blocking Road #18",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.95,
+    "status": "in-progress",
+    "department": "Parks & Recreation",
+    "reportCount": 3,
+    "createdAt": "2026-10-04T04:14:09.192Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15815,
+        10.82669
+      ]
+    }
+  },
+  {
+    "_id": "sample-019",
+    "title": "Damaged Traffic Signal Light #19",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-01T13:27:02.835Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13506,
+        10.74604
+      ]
+    }
+  },
+  {
+    "_id": "sample-020",
+    "title": "Severe Pothole #20",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.82,
+    "status": "pending",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-10-05T02:35:17.204Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12689,
+        10.75633
+      ]
+    }
+  },
+  {
+    "_id": "sample-021",
+    "title": "Deep Crater on Main St #21",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.96,
+    "status": "assigned",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-10-05T16:06:57.591Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16427,
+        10.74987
+      ]
+    }
+  },
+  {
+    "_id": "sample-022",
+    "title": "Overflowing Trash Container #22",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.85,
+    "status": "in-progress",
+    "department": "Sanitation",
+    "reportCount": 3,
+    "createdAt": "2026-10-05T14:07:03.975Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12316,
+        10.77722
+      ]
+    }
+  },
+  {
+    "_id": "sample-023",
+    "title": "Uncollected Household Waste #23",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.9,
+    "status": "resolved",
+    "department": "Sanitation",
+    "reportCount": 1,
+    "createdAt": "2026-10-04T22:41:35.478Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.14783,
+        10.83053
+      ]
+    }
+  },
+  {
+    "_id": "sample-024",
+    "title": "Non-Functional Streetlight #24",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.96,
+    "status": "pending",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-03T15:28:45.213Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13861,
+        10.73523
+      ]
+    }
+  },
+  {
+    "_id": "sample-025",
+    "title": "Flickering Solar Street Lamp #25",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.88,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-03T14:59:40.672Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.18047,
+        10.78682
+      ]
+    }
+  },
+  {
+    "_id": "sample-026",
+    "title": "Major Underground Pipe Leak #26",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.82,
+    "status": "in-progress",
+    "department": "Water Supply",
+    "reportCount": 2,
+    "createdAt": "2026-10-06T21:51:31.400Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15668,
+        10.75033
+      ]
+    }
+  },
+  {
+    "_id": "sample-027",
+    "title": "Open Drainage Channel Flood #27",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.86,
+    "status": "resolved",
+    "department": "Water Supply",
+    "reportCount": 5,
+    "createdAt": "2026-10-05T19:45:31.386Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.11592,
+        10.74698
+      ]
+    }
+  },
+  {
+    "_id": "sample-028",
+    "title": "Fallen Tree Blocking Road #28",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.84,
+    "status": "pending",
+    "department": "Parks & Recreation",
+    "reportCount": 2,
+    "createdAt": "2026-09-29T07:45:48.344Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15935,
+        10.76162
+      ]
+    }
+  },
+  {
+    "_id": "sample-029",
+    "title": "Damaged Traffic Signal Light #29",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.89,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-10-01T15:15:21.729Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.09934,
+        10.8447
+      ]
+    }
+  },
+  {
+    "_id": "sample-030",
+    "title": "Severe Pothole #30",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.98,
+    "status": "in-progress",
+    "department": "Road Works",
+    "reportCount": 3,
+    "createdAt": "2026-09-28T15:40:07.032Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13057,
+        10.7815
+      ]
+    }
+  },
+  {
+    "_id": "sample-031",
+    "title": "Deep Crater on Main St #31",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.86,
+    "status": "resolved",
+    "department": "Road Works",
+    "reportCount": 2,
+    "createdAt": "2026-10-06T01:49:23.458Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1776,
+        10.77633
+      ]
+    }
+  },
+  {
+    "_id": "sample-032",
+    "title": "Overflowing Trash Container #32",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.93,
+    "status": "pending",
+    "department": "Sanitation",
+    "reportCount": 1,
+    "createdAt": "2026-10-07T17:40:47.701Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1797,
+        10.78286
+      ]
+    }
+  },
+  {
+    "_id": "sample-033",
+    "title": "Uncollected Household Waste #33",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.85,
+    "status": "assigned",
+    "department": "Sanitation",
+    "reportCount": 4,
+    "createdAt": "2026-10-06T00:18:30.755Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1058,
+        10.81129
+      ]
+    }
+  },
+  {
+    "_id": "sample-034",
+    "title": "Non-Functional Streetlight #34",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.93,
+    "status": "in-progress",
+    "department": "Electrical",
+    "reportCount": 4,
+    "createdAt": "2026-10-07T18:31:59.090Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.18815,
+        10.84433
+      ]
+    }
+  },
+  {
+    "_id": "sample-035",
+    "title": "Flickering Solar Street Lamp #35",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.84,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-10-07T16:29:23.685Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08516,
+        10.81584
+      ]
+    }
+  },
+  {
+    "_id": "sample-036",
+    "title": "Major Underground Pipe Leak #36",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.95,
+    "status": "pending",
+    "department": "Water Supply",
+    "reportCount": 3,
+    "createdAt": "2026-10-02T18:06:20.197Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.07883,
+        10.77347
+      ]
+    }
+  },
+  {
+    "_id": "sample-037",
+    "title": "Open Drainage Channel Flood #37",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.94,
+    "status": "assigned",
+    "department": "Water Supply",
+    "reportCount": 2,
+    "createdAt": "2026-09-28T16:00:16.385Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12901,
+        10.78799
+      ]
+    }
+  },
+  {
+    "_id": "sample-038",
+    "title": "Fallen Tree Blocking Road #38",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.86,
+    "status": "in-progress",
+    "department": "Parks & Recreation",
+    "reportCount": 5,
+    "createdAt": "2026-10-02T09:44:35.272Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.11712,
+        10.75341
+      ]
+    }
+  },
+  {
+    "_id": "sample-039",
+    "title": "Damaged Traffic Signal Light #39",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.97,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 4,
+    "createdAt": "2026-10-03T13:32:27.034Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19087,
+        10.77753
+      ]
+    }
+  },
+  {
+    "_id": "sample-040",
+    "title": "Severe Pothole #40",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.9,
+    "status": "pending",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-09-29T07:25:01.748Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15748,
+        10.76197
+      ]
+    }
+  },
+  {
+    "_id": "sample-041",
+    "title": "Deep Crater on Main St #41",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.89,
+    "status": "assigned",
+    "department": "Road Works",
+    "reportCount": 2,
+    "createdAt": "2026-10-01T12:24:04.926Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19066,
+        10.83396
+      ]
+    }
+  },
+  {
+    "_id": "sample-042",
+    "title": "Overflowing Trash Container #42",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.97,
+    "status": "in-progress",
+    "department": "Sanitation",
+    "reportCount": 1,
+    "createdAt": "2026-09-28T06:59:15.710Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08494,
+        10.76
+      ]
+    }
+  },
+  {
+    "_id": "sample-043",
+    "title": "Uncollected Household Waste #43",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.95,
+    "status": "resolved",
+    "department": "Sanitation",
+    "reportCount": 2,
+    "createdAt": "2026-10-01T18:54:46.661Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13019,
+        10.84219
+      ]
+    }
+  },
+  {
+    "_id": "sample-044",
+    "title": "Non-Functional Streetlight #44",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.88,
+    "status": "pending",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-09-28T15:35:44.414Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.09216,
+        10.8313
+      ]
+    }
+  },
+  {
+    "_id": "sample-045",
+    "title": "Flickering Solar Street Lamp #45",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.93,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 2,
+    "createdAt": "2026-10-02T06:06:17.817Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13451,
+        10.74674
+      ]
+    }
+  },
+  {
+    "_id": "sample-046",
+    "title": "Major Underground Pipe Leak #46",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.89,
+    "status": "in-progress",
+    "department": "Water Supply",
+    "reportCount": 5,
+    "createdAt": "2026-10-05T10:16:29.656Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.11176,
+        10.7656
+      ]
+    }
+  },
+  {
+    "_id": "sample-047",
+    "title": "Open Drainage Channel Flood #47",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.95,
+    "status": "resolved",
+    "department": "Water Supply",
+    "reportCount": 4,
+    "createdAt": "2026-09-30T22:56:13.489Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16626,
+        10.8373
+      ]
+    }
+  },
+  {
+    "_id": "sample-048",
+    "title": "Fallen Tree Blocking Road #48",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.96,
+    "status": "pending",
+    "department": "Parks & Recreation",
+    "reportCount": 3,
+    "createdAt": "2026-10-03T11:18:26.202Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1319,
+        10.76307
+      ]
+    }
+  },
+  {
+    "_id": "sample-049",
+    "title": "Damaged Traffic Signal Light #49",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.85,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-10-06T09:25:20.251Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19468,
+        10.80499
+      ]
+    }
+  },
+  {
+    "_id": "sample-050",
+    "title": "Severe Pothole #50",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.92,
+    "status": "in-progress",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-10-03T00:18:29.105Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12508,
+        10.82164
+      ]
+    }
+  },
+  {
+    "_id": "sample-051",
+    "title": "Deep Crater on Main St #51",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.92,
+    "status": "resolved",
+    "department": "Road Works",
+    "reportCount": 3,
+    "createdAt": "2026-09-29T05:51:18.250Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1738,
+        10.82927
+      ]
+    }
+  },
+  {
+    "_id": "sample-052",
+    "title": "Overflowing Trash Container #52",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.89,
+    "status": "pending",
+    "department": "Sanitation",
+    "reportCount": 2,
+    "createdAt": "2026-09-29T14:42:31.979Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.0793,
+        10.76117
+      ]
+    }
+  },
+  {
+    "_id": "sample-053",
+    "title": "Uncollected Household Waste #53",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.88,
+    "status": "assigned",
+    "department": "Sanitation",
+    "reportCount": 4,
+    "createdAt": "2026-10-01T18:14:51.163Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.17145,
+        10.74121
+      ]
+    }
+  },
+  {
+    "_id": "sample-054",
+    "title": "Non-Functional Streetlight #54",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.91,
+    "status": "in-progress",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-10-03T07:52:59.130Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.09045,
+        10.82647
+      ]
+    }
+  },
+  {
+    "_id": "sample-055",
+    "title": "Flickering Solar Street Lamp #55",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.84,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 2,
+    "createdAt": "2026-10-02T07:57:53.780Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12911,
+        10.80543
+      ]
+    }
+  },
+  {
+    "_id": "sample-056",
+    "title": "Major Underground Pipe Leak #56",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.98,
+    "status": "pending",
+    "department": "Water Supply",
+    "reportCount": 3,
+    "createdAt": "2026-10-03T10:51:52.897Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.10159,
+        10.73636
+      ]
+    }
+  },
+  {
+    "_id": "sample-057",
+    "title": "Open Drainage Channel Flood #57",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "assigned",
+    "department": "Water Supply",
+    "reportCount": 4,
+    "createdAt": "2026-09-28T07:28:48.955Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08316,
+        10.82652
+      ]
+    }
+  },
+  {
+    "_id": "sample-058",
+    "title": "Fallen Tree Blocking Road #58",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.89,
+    "status": "in-progress",
+    "department": "Parks & Recreation",
+    "reportCount": 5,
+    "createdAt": "2026-10-02T09:44:35.629Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.10757,
+        10.82793
+      ]
+    }
+  },
+  {
+    "_id": "sample-059",
+    "title": "Damaged Traffic Signal Light #59",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.85,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-09-30T09:21:06.545Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12192,
+        10.76467
+      ]
+    }
+  },
+  {
+    "_id": "sample-060",
+    "title": "Severe Pothole #60",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.93,
+    "status": "pending",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-10-06T20:26:08.271Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.17681,
+        10.84218
+      ]
+    }
+  },
+  {
+    "_id": "sample-061",
+    "title": "Deep Crater on Main St #61",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "assigned",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-10-03T20:27:20.826Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.10995,
+        10.77137
+      ]
+    }
+  },
+  {
+    "_id": "sample-062",
+    "title": "Overflowing Trash Container #62",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.87,
+    "status": "in-progress",
+    "department": "Sanitation",
+    "reportCount": 5,
+    "createdAt": "2026-10-02T01:36:55.748Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.11506,
+        10.7723
+      ]
+    }
+  },
+  {
+    "_id": "sample-063",
+    "title": "Uncollected Household Waste #63",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.88,
+    "status": "resolved",
+    "department": "Sanitation",
+    "reportCount": 5,
+    "createdAt": "2026-10-04T01:33:39.070Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16112,
+        10.77194
+      ]
+    }
+  },
+  {
+    "_id": "sample-064",
+    "title": "Non-Functional Streetlight #64",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.84,
+    "status": "pending",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-09-29T10:42:15.239Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.14561,
+        10.80734
+      ]
+    }
+  },
+  {
+    "_id": "sample-065",
+    "title": "Flickering Solar Street Lamp #65",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.94,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 4,
+    "createdAt": "2026-10-03T03:54:48.319Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13531,
+        10.76472
+      ]
+    }
+  },
+  {
+    "_id": "sample-066",
+    "title": "Major Underground Pipe Leak #66",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.97,
+    "status": "in-progress",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-09-30T06:03:35.186Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19308,
+        10.75439
+      ]
+    }
+  },
+  {
+    "_id": "sample-067",
+    "title": "Open Drainage Channel Flood #67",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.9,
+    "status": "resolved",
+    "department": "Water Supply",
+    "reportCount": 3,
+    "createdAt": "2026-10-01T19:46:01.610Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19525,
+        10.7894
+      ]
+    }
+  },
+  {
+    "_id": "sample-068",
+    "title": "Fallen Tree Blocking Road #68",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.87,
+    "status": "pending",
+    "department": "Parks & Recreation",
+    "reportCount": 3,
+    "createdAt": "2026-09-29T17:28:12.573Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1494,
+        10.84404
+      ]
+    }
+  },
+  {
+    "_id": "sample-069",
+    "title": "Damaged Traffic Signal Light #69",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.96,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 4,
+    "createdAt": "2026-10-01T01:59:23.870Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16848,
+        10.79224
+      ]
+    }
+  },
+  {
+    "_id": "sample-070",
+    "title": "Severe Pothole #70",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.9,
+    "status": "in-progress",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-10-06T14:17:32.725Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.19306,
+        10.7723
+      ]
+    }
+  },
+  {
+    "_id": "sample-071",
+    "title": "Deep Crater on Main St #71",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.9,
+    "status": "resolved",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-10-06T01:37:21.473Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15541,
+        10.78837
+      ]
+    }
+  },
+  {
+    "_id": "sample-072",
+    "title": "Overflowing Trash Container #72",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.97,
+    "status": "pending",
+    "department": "Sanitation",
+    "reportCount": 3,
+    "createdAt": "2026-10-06T17:58:23.810Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08485,
+        10.77443
+      ]
+    }
+  },
+  {
+    "_id": "sample-073",
+    "title": "Uncollected Household Waste #73",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.92,
+    "status": "assigned",
+    "department": "Sanitation",
+    "reportCount": 4,
+    "createdAt": "2026-10-04T09:08:28.045Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.0901,
+        10.7278
+      ]
+    }
+  },
+  {
+    "_id": "sample-074",
+    "title": "Non-Functional Streetlight #74",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.91,
+    "status": "in-progress",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-05T17:46:13.890Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1527,
+        10.74392
+      ]
+    }
+  },
+  {
+    "_id": "sample-075",
+    "title": "Flickering Solar Street Lamp #75",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.92,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-10-01T05:51:03.814Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13854,
+        10.75289
+      ]
+    }
+  },
+  {
+    "_id": "sample-076",
+    "title": "Major Underground Pipe Leak #76",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.91,
+    "status": "pending",
+    "department": "Water Supply",
+    "reportCount": 4,
+    "createdAt": "2026-10-06T11:16:48.362Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15966,
+        10.80117
+      ]
+    }
+  },
+  {
+    "_id": "sample-077",
+    "title": "Open Drainage Channel Flood #77",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.95,
+    "status": "assigned",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-09-28T17:57:59.387Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16084,
+        10.7385
+      ]
+    }
+  },
+  {
+    "_id": "sample-078",
+    "title": "Fallen Tree Blocking Road #78",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.85,
+    "status": "in-progress",
+    "department": "Parks & Recreation",
+    "reportCount": 1,
+    "createdAt": "2026-10-02T04:51:55.932Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1838,
+        10.7328
+      ]
+    }
+  },
+  {
+    "_id": "sample-079",
+    "title": "Damaged Traffic Signal Light #79",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.96,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 5,
+    "createdAt": "2026-10-02T10:57:09.638Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13741,
+        10.83463
+      ]
+    }
+  },
+  {
+    "_id": "sample-080",
+    "title": "Severe Pothole #80",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "pending",
+    "department": "Road Works",
+    "reportCount": 3,
+    "createdAt": "2026-09-30T21:27:32.184Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.09388,
+        10.7536
+      ]
+    }
+  },
+  {
+    "_id": "sample-081",
+    "title": "Deep Crater on Main St #81",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.85,
+    "status": "assigned",
+    "department": "Road Works",
+    "reportCount": 4,
+    "createdAt": "2026-10-02T16:43:46.911Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.18107,
+        10.84585
+      ]
+    }
+  },
+  {
+    "_id": "sample-082",
+    "title": "Overflowing Trash Container #82",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.85,
+    "status": "in-progress",
+    "department": "Sanitation",
+    "reportCount": 2,
+    "createdAt": "2026-10-07T16:36:45.858Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.132,
+        10.80135
+      ]
+    }
+  },
+  {
+    "_id": "sample-083",
+    "title": "Uncollected Household Waste #83",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.92,
+    "status": "resolved",
+    "department": "Sanitation",
+    "reportCount": 1,
+    "createdAt": "2026-10-01T06:39:50.539Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.16009,
+        10.80962
+      ]
+    }
+  },
+  {
+    "_id": "sample-084",
+    "title": "Non-Functional Streetlight #84",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.86,
+    "status": "pending",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-09-29T01:28:06.991Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.08086,
+        10.73099
+      ]
+    }
+  },
+  {
+    "_id": "sample-085",
+    "title": "Flickering Solar Street Lamp #85",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.92,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-09-30T04:10:57.287Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1636,
+        10.77045
+      ]
+    }
+  },
+  {
+    "_id": "sample-086",
+    "title": "Major Underground Pipe Leak #86",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.94,
+    "status": "in-progress",
+    "department": "Water Supply",
+    "reportCount": 2,
+    "createdAt": "2026-10-07T01:50:48.692Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12696,
+        10.77336
+      ]
+    }
+  },
+  {
+    "_id": "sample-087",
+    "title": "Open Drainage Channel Flood #87",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.97,
+    "status": "resolved",
+    "department": "Water Supply",
+    "reportCount": 4,
+    "createdAt": "2026-10-05T05:52:33.938Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.17051,
+        10.76932
+      ]
+    }
+  },
+  {
+    "_id": "sample-088",
+    "title": "Fallen Tree Blocking Road #88",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.83,
+    "status": "pending",
+    "department": "Parks & Recreation",
+    "reportCount": 2,
+    "createdAt": "2026-10-04T01:16:45.854Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12942,
+        10.78576
+      ]
+    }
+  },
+  {
+    "_id": "sample-089",
+    "title": "Damaged Traffic Signal Light #89",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.84,
+    "status": "assigned",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-10-06T18:32:35.775Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.15629,
+        10.8382
+      ]
+    }
+  },
+  {
+    "_id": "sample-090",
+    "title": "Severe Pothole #90",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.85,
+    "status": "in-progress",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-10-07T14:13:50.060Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.14758,
+        10.74483
+      ]
+    }
+  },
+  {
+    "_id": "sample-091",
+    "title": "Deep Crater on Main St #91",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 2",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.87,
+    "status": "resolved",
+    "department": "Road Works",
+    "reportCount": 3,
+    "createdAt": "2026-09-30T11:39:41.240Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1309,
+        10.75224
+      ]
+    }
+  },
+  {
+    "_id": "sample-092",
+    "title": "Overflowing Trash Container #92",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 3",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.84,
+    "status": "pending",
+    "department": "Sanitation",
+    "reportCount": 5,
+    "createdAt": "2026-09-28T19:43:28.840Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1782,
+        10.81971
+      ]
+    }
+  },
+  {
+    "_id": "sample-093",
+    "title": "Uncollected Household Waste #93",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 4",
+    "detectedIssue": "Garbage Dump",
+    "severity": "Medium",
+    "confidence": 0.9,
+    "status": "assigned",
+    "department": "Sanitation",
+    "reportCount": 4,
+    "createdAt": "2026-10-05T05:51:20.043Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.1486,
+        10.83757
+      ]
+    }
+  },
+  {
+    "_id": "sample-094",
+    "title": "Non-Functional Streetlight #94",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 5",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.84,
+    "status": "in-progress",
+    "department": "Electrical",
+    "reportCount": 1,
+    "createdAt": "2026-09-30T23:54:30.680Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.18771,
+        10.81735
+      ]
+    }
+  },
+  {
+    "_id": "sample-095",
+    "title": "Flickering Solar Street Lamp #95",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 6",
+    "detectedIssue": "Broken Streetlight",
+    "severity": "Low",
+    "confidence": 0.97,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 2,
+    "createdAt": "2026-10-04T22:18:58.328Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.07868,
+        10.81724
+      ]
+    }
+  },
+  {
+    "_id": "sample-096",
+    "title": "Major Underground Pipe Leak #96",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 7",
+    "detectedIssue": "Water Pipe Leak",
+    "severity": "High",
+    "confidence": 0.83,
+    "status": "pending",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-10-03T06:50:34.479Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.11933,
+        10.82882
+      ]
+    }
+  },
+  {
+    "_id": "sample-097",
+    "title": "Open Drainage Channel Flood #97",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 8",
+    "detectedIssue": "Drainage Clog",
+    "severity": "High",
+    "confidence": 0.88,
+    "status": "assigned",
+    "department": "Water Supply",
+    "reportCount": 1,
+    "createdAt": "2026-09-30T07:35:43.521Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.0925,
+        10.79043
+      ]
+    }
+  },
+  {
+    "_id": "sample-098",
+    "title": "Fallen Tree Blocking Road #98",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 9",
+    "detectedIssue": "Fallen Tree",
+    "severity": "Medium",
+    "confidence": 0.98,
+    "status": "in-progress",
+    "department": "Parks & Recreation",
+    "reportCount": 5,
+    "createdAt": "2026-10-04T21:33:13.493Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.13861,
+        10.81597
+      ]
+    }
+  },
+  {
+    "_id": "sample-099",
+    "title": "Damaged Traffic Signal Light #99",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 10",
+    "detectedIssue": "Traffic Light Bug",
+    "severity": "High",
+    "confidence": 0.94,
+    "status": "resolved",
+    "department": "Electrical",
+    "reportCount": 3,
+    "createdAt": "2026-10-04T02:41:14.320Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.0802,
+        10.79609
+      ]
+    }
+  },
+  {
+    "_id": "sample-100",
+    "title": "Severe Pothole #100",
+    "description": "Auto-detected civic issue reported near Thanjavur zone 1",
+    "detectedIssue": "Pothole",
+    "severity": "High",
+    "confidence": 0.91,
+    "status": "pending",
+    "department": "Road Works",
+    "reportCount": 5,
+    "createdAt": "2026-09-30T13:16:08.652Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        79.12993,
+        10.78874
+      ]
+    }
+  }
+]
