@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+server/node_modules
+.env
+.env.local
+
+# Builds & Cache
+dist
+build
+.cache
+*.log
+
+# SQLite Local Storage
+server/civic_mana.db
+server/uploads/*
+!server/uploads/.gitkeep
+
+# IDE & OS
+.vscode/
+.DS_Store
+Thumbs.db
