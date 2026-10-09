@@ -3,6 +3,7 @@ import {
   Camera, BrainCircuit, MapPin, CheckCircle2, 
   ArrowRight, ShieldCheck, Activity, Zap, Menu, LayoutDashboard, Copy, HardHat
 } from 'lucide-react';
+import Logo from './Logo';
 
 export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onViewMap, onNavigate }) {
   return (
@@ -13,14 +14,7 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
             
             {/* Logo */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }} onClick={() => onNavigate('home')}>
-              <div style={{ width: '36px', height: '36px', borderRadius: '10px', overflow: 'hidden', background: '#0d0f14', border: '1px solid rgba(249, 115, 22, 0.4)' }}>
-                <img src="/logo.png" alt="Civic Vision Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              </div>
-              <span style={{ fontSize: '22px', fontWeight: '800', letterSpacing: '-0.5px', color: '#fff' }}>
-                CIVIC<span style={{ color: 'var(--accent-color)' }}>VISION</span>
-              </span>
-            </div>
+            <Logo size="medium" onClick={() => onNavigate('home')} />
 
             {/* Nav Items */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
@@ -82,7 +76,7 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
               </h1>
 
               <p style={{ color: '#94a3b8', fontSize: '18px', lineHeight: '1.6', margin: 0, maxWidth: '580px' }}>
-                CivicVision uses advanced AI to instantly detect, route, and track civic issues from a single photo. Report potholes, hazards, and infrastructure damage in seconds.
+                MAATRAM uses advanced AI to instantly detect, route, and track civic issues from a single photo. Report potholes, hazards, and infrastructure damage in seconds.
               </p>
 
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '8px' }}>
@@ -158,7 +152,7 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px auto' }}>
             <h2 style={{ fontSize: '40px', fontWeight: '800', margin: '0 0 16px 0' }}>
-              How <span style={{ color: 'var(--accent-color)' }}>CivicVision</span> Works
+              How <span style={{ color: 'var(--accent-color)' }}>MAATRAM</span> Works
             </h2>
             <p style={{ color: '#94a3b8', fontSize: '17px', margin: 0 }}>
               A seamless, automated pipeline from a citizen's camera to a verified, resolved city issue.
@@ -216,14 +210,9 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
       {/* Landing Footer */}
       <footer style={{ borderTop: '1px solid rgba(255,255,255,0.1)', padding: '40px 0', background: '#050505', fontSize: '14px', color: '#64748b' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{ width: '28px', height: '28px', borderRadius: '8px', overflow: 'hidden' }}>
-              <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </div>
-            <span style={{ fontSize: '18px', fontWeight: '800', color: '#fff' }}>CIVIC<span style={{ color: 'var(--accent-color)' }}>VISION</span></span>
-          </div>
+          <Logo size="medium" onClick={() => onNavigate('home')} />
 
-          <div>© {new Date().getFullYear()} CivicVision Smart Resolution Platform. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} MAATRAM Smart Resolution Platform. All rights reserved.</div>
 
           <div style={{ display: 'flex', gap: '20px' }}>
             <button onClick={() => onNavigate('reporter')} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }}>Citizen App</button>

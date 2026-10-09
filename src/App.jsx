@@ -6,6 +6,7 @@ import WorkerView from './WorkerView';
 import DuplicateAnalyzer from './components/DuplicateAnalyzer';
 import AuthSessionPage from './components/AuthSessionPage';
 import LandingHomePage from './components/LandingHomePage';
+import Logo from './components/Logo';
 
 function App() {
   const [view, setView] = useState('home');
@@ -96,27 +97,10 @@ function App() {
       <aside className="sidebar">
         <div 
           className="sidebar-header" 
-          style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
+          style={{ padding: '20px 16px', cursor: 'pointer' }}
           onClick={() => navigateTo('home')}
         >
-          <div 
-            className="sidebar-logo" 
-            style={{ 
-              width: '36px', 
-              height: '36px', 
-              borderRadius: '10px', 
-              overflow: 'hidden',
-              background: '#0d0f14',
-              border: '1px solid rgba(249, 115, 22, 0.4)'
-            }}
-          >
-            <img src="/logo.png" alt="Civic Vision Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div>
-            <div style={{ fontWeight: '800', fontSize: '18px', letterSpacing: '-0.5px' }}>
-              CIVIC<span style={{ color: 'var(--accent-color)' }}>VISION</span>
-            </div>
-          </div>
+          <Logo size="medium" />
         </div>
         <div className="nav-menu">
           <div 
