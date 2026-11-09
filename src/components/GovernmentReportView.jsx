@@ -182,46 +182,48 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
             1. CIVIC HAZARD CLASSIFICATION & JURISDICTION
           </h4>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
-            <tbody>
-              <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '30%', color: '#475569' }}>
-                  Identified Civic Hazard:
-                </td>
-                <td style={{ padding: '8px 12px', fontWeight: '700', color: '#0f172a' }}>
-                  {reportData.detectedIssue || 'Severe Road Surface Defect / Pothole'}
-                </td>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '20%', color: '#475569' }}>
-                  Severity Level:
-                </td>
-                <td style={{ padding: '8px 12px', fontWeight: '800', color: '#dc2626' }}>
-                  {reportData.severity || 'CRITICAL - TIER 1'}
-                </td>
-              </tr>
-              <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Responsible Authority:
-                </td>
-                <td style={{ padding: '8px 12px', color: '#0f172a' }} colSpan="3">
-                  Department of Highways & Municipal Corporation Engineering Division (Thanjavur North)
-                </td>
-              </tr>
-              <tr>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Field Inspection Unit:
-                </td>
-                <td style={{ padding: '8px 12px', color: '#0f172a' }}>
-                  Executive Engineer, Rapid Urban Maintenance Wing (Roads & Bridges)
-                </td>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Priority Rank:
-                </td>
-                <td style={{ padding: '8px 12px', color: '#0f172a', fontWeight: '700' }}>
-                  Rank 1 (Immediate Dispatch)
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px', minWidth: '400px' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '30%', color: '#475569' }}>
+                    Identified Civic Hazard:
+                  </td>
+                  <td style={{ padding: '8px 12px', fontWeight: '700', color: '#0f172a' }}>
+                    {reportData.detectedIssue || 'Severe Road Surface Defect / Pothole'}
+                  </td>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '20%', color: '#475569' }}>
+                    Severity Level:
+                  </td>
+                  <td style={{ padding: '8px 12px', fontWeight: '800', color: '#dc2626' }}>
+                    {reportData.severity || 'CRITICAL - TIER 1'}
+                  </td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Responsible Authority:
+                  </td>
+                  <td style={{ padding: '8px 12px', color: '#0f172a' }} colSpan="3">
+                    Department of Highways & Municipal Corporation Engineering Division (Thanjavur North)
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Field Inspection Unit:
+                  </td>
+                  <td style={{ padding: '8px 12px', color: '#0f172a' }}>
+                    Executive Engineer, Rapid Urban Maintenance Wing (Roads & Bridges)
+                  </td>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Priority Rank:
+                  </td>
+                  <td style={{ padding: '8px 12px', color: '#0f172a', fontWeight: '700' }}>
+                    Rank 1 (Immediate Dispatch)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Section 2: Geospatial Coordinates & Location Intelligence */}
@@ -243,34 +245,36 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
             2. GEOSPATIAL LOCATION & GIS ATTRIBUTES
           </h4>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
-            <tbody>
-              <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '30%', color: '#475569' }}>
-                  GPS Coordinates:
-                </td>
-                <td style={{ padding: '8px 12px', fontWeight: '700', fontFamily: 'monospace', color: '#0f172a' }}>
-                  Latitude: {reportData.location.lat ? Number(reportData.location.lat).toFixed(6) : '10.786940'}° N, Longitude: {reportData.location.lng ? Number(reportData.location.lng).toFixed(6) : '79.137820'}° E
-                </td>
-              </tr>
-              <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Municipal Administrative Zone:
-                </td>
-                <td style={{ padding: '8px 12px', color: '#0f172a' }}>
-                  Zone 3 • Ward 24 • Central Commercial Corridor, Thanjavur
-                </td>
-              </tr>
-              <tr>
-                <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  GIS Duplicate Check:
-                </td>
-                <td style={{ padding: '8px 12px', color: '#15803d', fontWeight: '700' }}>
-                  ✅ CLEARED — Verified zero duplicate submissions within 50m spatial radius (Haversine Tested)
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px', minWidth: '400px' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', width: '30%', color: '#475569' }}>
+                    GPS Coordinates:
+                  </td>
+                  <td style={{ padding: '8px 12px', fontWeight: '700', fontFamily: 'monospace', color: '#0f172a' }}>
+                    Latitude: {reportData.location.lat ? Number(reportData.location.lat).toFixed(6) : '10.786940'}° N, Longitude: {reportData.location.lng ? Number(reportData.location.lng).toFixed(6) : '79.137820'}° E
+                  </td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Municipal Administrative Zone:
+                  </td>
+                  <td style={{ padding: '8px 12px', color: '#0f172a' }}>
+                    Zone 3 • Ward 24 • Central Commercial Corridor, Thanjavur
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '8px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    GIS Duplicate Check:
+                  </td>
+                  <td style={{ padding: '8px 12px', color: '#15803d', fontWeight: '700' }}>
+                    ✅ CLEARED — Verified zero duplicate submissions within 50m spatial radius (Haversine Tested)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Section 3: AI-Forensic Optical Authenticity Certificate */}
@@ -312,38 +316,40 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
             </p>
           </div>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px' }}>
-            <tbody>
-              <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
-                <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Camera Hardware / Device:
-                </td>
-                <td style={{ padding: '6px 12px', color: '#0f172a' }}>
-                  {reportData.forensics?.metadata?.cameraMake || 'Mobile Optical Sensor'} {reportData.forensics?.metadata?.cameraModel || '(Hardware EXIF Certified)'}
-                </td>
-                <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Sensor Noise (PRNU):
-                </td>
-                <td style={{ padding: '6px 12px', color: '#0f172a' }}>
-                  σ = {reportData.forensics?.canvasForensics?.noiseStdDev || '6.42'} (Natural Poisson Distribution)
-                </td>
-              </tr>
-              <tr>
-                <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  ELA Compression Profile:
-                </td>
-                <td style={{ padding: '6px 12px', color: '#0f172a' }}>
-                  Variance: {reportData.forensics?.canvasForensics?.elaVariance || '14.8'} (Uniform Camera Decay)
-                </td>
-                <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
-                  Perceptual Hash (pHash):
-                </td>
-                <td style={{ padding: '6px 12px', color: '#0f172a', fontFamily: 'monospace' }}>
-                  {reportData.forensics?.canvasForensics?.pHashHex || 'e9a3b821f004c891'}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px', minWidth: '400px' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Camera Hardware / Device:
+                  </td>
+                  <td style={{ padding: '6px 12px', color: '#0f172a' }}>
+                    {reportData.forensics?.metadata?.cameraMake || 'Mobile Optical Sensor'} {reportData.forensics?.metadata?.cameraModel || '(Hardware EXIF Certified)'}
+                  </td>
+                  <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Sensor Noise (PRNU):
+                  </td>
+                  <td style={{ padding: '6px 12px', color: '#0f172a' }}>
+                    σ = {reportData.forensics?.canvasForensics?.noiseStdDev || '6.42'} (Natural Poisson Distribution)
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    ELA Compression Profile:
+                  </td>
+                  <td style={{ padding: '6px 12px', color: '#0f172a' }}>
+                    Variance: {reportData.forensics?.canvasForensics?.elaVariance || '14.8'} (Uniform Camera Decay)
+                  </td>
+                  <td style={{ padding: '6px 12px', background: '#f8fafc', fontWeight: '600', color: '#475569' }}>
+                    Perceptual Hash (pHash):
+                  </td>
+                  <td style={{ padding: '6px 12px', color: '#0f172a', fontFamily: 'monospace' }}>
+                    {reportData.forensics?.canvasForensics?.pHashHex || 'e9a3b821f004c891'}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Section 4: Attached Photographic Evidence */}
@@ -365,7 +371,7 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
             4. ATTACHED PHOTOGRAPHIC EVIDENCE EXHIBIT
           </h4>
 
-          <div style={{ 
+          <div className="gov-evidence-container" style={{ 
             display: 'flex', 
             gap: '20px', 
             alignItems: 'flex-start',
@@ -374,7 +380,7 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
             borderRadius: '8px',
             border: '1px solid #e2e8f0'
           }}>
-            <div style={{ 
+            <div className="gov-evidence-img" style={{ 
               width: '260px', 
               height: '180px', 
               background: '#0f172a', 
@@ -443,12 +449,14 @@ const GovernmentReportView = ({ reportData, onBack, onNewReport }) => {
         </div>
 
         {/* Official Signatures & Seal Bar */}
-        <div style={{ 
+        <div className="gov-signatures-bar" style={{ 
           display: 'flex', 
           justifyContent: 'space-between', 
           alignItems: 'flex-end', 
           paddingTop: '20px',
-          borderTop: '2px solid #0f172a'
+          borderTop: '2px solid #0f172a',
+          flexWrap: 'wrap',
+          gap: '16px'
         }}>
           <div style={{ textAlign: 'center', width: '200px' }}>
             <div style={{ 

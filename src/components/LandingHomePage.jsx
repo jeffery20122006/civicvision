@@ -17,7 +17,7 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
             <Logo size="medium" onClick={() => onNavigate('home')} />
 
             {/* Nav Items */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            <div className="landing-nav-links" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
               <button 
                 onClick={() => onNavigate('reporter')} 
                 style={{ background: 'none', border: 'none', color: '#cbd5e1', fontSize: '14px', fontWeight: '500', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}

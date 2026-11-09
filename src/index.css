@@ -246,3 +246,176 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVE & TOUCH-FRIENDLY UTILITIES
+   ========================================================================== */
+
+/* Mobile Bottom Navigation Bar */
+.mobile-bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: var(--topbar-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border-color);
+  z-index: 100;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 4px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  flex: 1;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 4px 0;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bottom-nav-item.active {
+  color: var(--accent-color);
+}
+
+.bottom-nav-item:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 8px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+/* Responsive Grids */
+.forensic-split-view {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) 1fr;
+  gap: 20px;
+}
+
+.cluster-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+}
+
+/* Mobile Media Queries (Phones <= 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  /* Hide desktop sidebar on mobile */
+  .sidebar {
+    display: none !important;
+  }
+
+  /* Show mobile bottom navigation */
+  .mobile-bottom-nav {
+    display: flex;
+  }
+
+  .main-content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .topbar {
+    height: 58px;
+    padding: 0 14px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .page-content {
+    padding: 14px 12px 84px 12px;
+  }
+
+  .forensic-split-view {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cluster-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* Government Document Mobile Adjustments */
+  #official-gov-report {
+    padding: 20px 16px !important;
+    border-radius: 8px !important;
+  }
+
+  .gov-table-cell {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .gov-table-row {
+    display: flex !important;
+    flex-direction: column !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 6px 0;
+  }
+
+  .gov-evidence-container {
+    flex-direction: column !important;
+  }
+
+  .gov-evidence-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .gov-signatures-bar {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-nav-links {
+    display: none !important;
+  }
+}

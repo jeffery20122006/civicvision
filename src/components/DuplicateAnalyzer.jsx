@@ -468,7 +468,7 @@ const DuplicateAnalyzer = () => {
             </div>
 
             {/* Side-by-Side: Visual Forensic Inspector + Signals Scorecard */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(320px, 420px) 1fr', gap: '20px' }}>
+            <div className="forensic-split-view">
               
               {/* Left Column: Visual Inspector with Switchable Forensic Views */}
               <div className="glass-panel" style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -774,53 +774,55 @@ const DuplicateAnalyzer = () => {
       </div>
 
       {/* Cluster Table and Details View */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '20px' }}>
+      <div className="cluster-grid">
         {/* Active Clusters list */}
         <div className="glass-panel" style={{ padding: '20px' }}>
           <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', fontWeight: '600' }}>
             Detected High-Density Duplicate Clusters
           </h3>
-          <table className="admin-table">
-            <thead>
-              <tr>
-                <th>Cluster ID</th>
-                <th>Location / Landmark</th>
-                <th>Primary Issue</th>
-                <th>Duplicates</th>
-                <th>Radius</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {duplicateClusters.map((cluster) => (
-                <tr 
-                  key={cluster.clusterId} 
-                  style={{ cursor: 'pointer', background: selectedCluster?.clusterId === cluster.clusterId ? 'rgba(249, 115, 22, 0.1)' : 'transparent' }}
-                  onClick={() => setSelectedCluster(cluster)}
-                >
-                  <td><strong>{cluster.clusterId}</strong></td>
-                  <td>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <MapPin size={14} style={{ color: 'var(--accent-color)' }} />
-                      {cluster.locationName}
-                    </div>
-                  </td>
-                  <td>{cluster.primaryIssue}</td>
-                  <td>
-                    <span style={{ background: '#eab30822', color: '#eab308', padding: '3px 8px', borderRadius: '12px', fontWeight: '700', fontSize: '12px' }}>
-                      {cluster.reportsCount} Reports
-                    </span>
-                  </td>
-                  <td>{cluster.distanceRadius}</td>
-                  <td>
-                    <button className="btn-secondary" style={{ padding: '4px 10px', fontSize: '12px' }}>
-                      Inspect <ArrowRight size={12} style={{ marginLeft: '4px' }} />
-                    </button>
-                  </td>
+          <div className="table-responsive">
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Cluster ID</th>
+                  <th>Location / Landmark</th>
+                  <th>Primary Issue</th>
+                  <th>Duplicates</th>
+                  <th>Radius</th>
+                  <th>Action</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {duplicateClusters.map((cluster) => (
+                  <tr 
+                    key={cluster.clusterId} 
+                    style={{ cursor: 'pointer', background: selectedCluster?.clusterId === cluster.clusterId ? 'rgba(249, 115, 22, 0.1)' : 'transparent' }}
+                    onClick={() => setSelectedCluster(cluster)}
+                  >
+                    <td><strong>{cluster.clusterId}</strong></td>
+                    <td>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <MapPin size={14} style={{ color: 'var(--accent-color)' }} />
+                        {cluster.locationName}
+                      </div>
+                    </td>
+                    <td>{cluster.primaryIssue}</td>
+                    <td>
+                      <span style={{ background: '#eab30822', color: '#eab308', padding: '3px 8px', borderRadius: '12px', fontWeight: '700', fontSize: '12px' }}>
+                        {cluster.reportsCount} Reports
+                      </span>
+                    </td>
+                    <td>{cluster.distanceRadius}</td>
+                    <td>
+                      <button className="btn-secondary" style={{ padding: '4px 10px', fontSize: '12px' }}>
+                        Inspect <ArrowRight size={12} style={{ marginLeft: '4px' }} />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Selected Cluster Inspection Panel */}

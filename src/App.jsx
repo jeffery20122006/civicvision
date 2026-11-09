@@ -224,6 +224,50 @@ function App() {
           {view === 'duplicates' && <DuplicateAnalyzer />}
           {view === 'worker' && <WorkerView currentUser={currentUser} />}
         </main>
+
+        {/* Mobile Bottom Navigation Bar (Phones <= 768px) */}
+        <nav className="mobile-bottom-nav">
+          <button 
+            type="button"
+            className={`bottom-nav-item ${view === 'home' ? 'active' : ''}`}
+            onClick={() => navigateTo('home')}
+          >
+            <Home size={18} />
+            <span>Home</span>
+          </button>
+          <button 
+            type="button"
+            className={`bottom-nav-item ${view === 'reporter' ? 'active' : ''}`}
+            onClick={() => navigateTo('reporter')}
+          >
+            <Camera size={18} />
+            <span>Report</span>
+          </button>
+          <button 
+            type="button"
+            className={`bottom-nav-item ${view === 'duplicates' ? 'active' : ''}`}
+            onClick={() => navigateTo('duplicates')}
+          >
+            <Copy size={18} />
+            <span>Duplicates</span>
+          </button>
+          <button 
+            type="button"
+            className={`bottom-nav-item ${view === 'admin' ? 'active' : ''}`}
+            onClick={() => navigateTo('admin')}
+          >
+            <LayoutDashboard size={18} />
+            <span>Admin</span>
+          </button>
+          <button 
+            type="button"
+            className={`bottom-nav-item ${view === 'worker' ? 'active' : ''}`}
+            onClick={() => navigateTo('worker')}
+          >
+            <HardHat size={18} />
+            <span>Worker</span>
+          </button>
+        </nav>
       </div>
     </div>
   );
