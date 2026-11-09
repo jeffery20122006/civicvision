@@ -419,3 +419,145 @@ button:disabled {
     display: none !important;
   }
 }
+
+
+/* ==========================================================================
+   LANDING HOME PAGE MOBILE RESPONSIVE STYLES
+   ========================================================================== */
+
+.landing-nav-container {
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.landing-hero-section {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.hero-subtitle {
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.landing-section-padding {
+  padding: 80px 0;
+}
+
+.landing-section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 14px 0;
+}
+
+.landing-impact-box {
+  padding: 48px 32px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.12), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  text-align: center;
+}
+
+.impact-stat-val {
+  font-size: 46px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/* Mobile Phones (<= 768px) */
+@media (max-width: 768px) {
+  .landing-nav-container {
+    height: 60px;
+    padding: 0 16px;
+  }
+
+  .landing-hero-section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-title {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-buttons button {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+  }
+
+  .landing-section-padding {
+    padding: 40px 0 !important;
+  }
+
+  .landing-section-title {
+    font-size: 24px !important;
+  }
+
+  .landing-impact-box {
+    padding: 24px 16px !important;
+    border-radius: 20px !important;
+  }
+
+  .impact-stat-val {
+    font-size: 32px !important;
+  }
+
+  .landing-footer-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+}
