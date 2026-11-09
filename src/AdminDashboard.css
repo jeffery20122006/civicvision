@@ -161,3 +161,226 @@
   background: var(--bg-color);
   color: var(--text-main);
 }
+
+
+/* ==========================================================================
+   ADMIN DASHBOARD & DUPLICATE ANALYZER MOBILE OPTIMIZATIONS
+   ========================================================================== */
+
+/* 2x2 Metrics Grid on Mobile */
+.admin-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+/* Mobile Ticket Card Styles (replaces squished table on phones) */
+.mobile-cards-view {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.desktop-table-view {
+  display: block;
+}
+
+.mobile-ticket-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-ticket-card .ticket-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mobile-ticket-card .ticket-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.mobile-ticket-card .ticket-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.mobile-ticket-card .ticket-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mobile-ticket-card .ticket-actions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.mobile-ticket-card .action-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mobile-ticket-card .action-select-group label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.mobile-ticket-card .department-select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+/* Mobile Cluster Card Styles */
+.mobile-cluster-card {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-cluster-card:active {
+  background: rgba(249, 115, 22, 0.08);
+  border-color: var(--accent-color);
+}
+
+/* Severity Tag helpers */
+.severity-pill-high {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.severity-pill-med {
+  background: rgba(234, 179, 8, 0.2);
+  color: #eab308;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.severity-pill-low {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Mobile Breakpoint Adjustments (<= 768px) */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column !important;
+    gap: 14px;
+  }
+
+  .admin-header h2 {
+    font-size: 22px;
+  }
+
+  .admin-header button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-metrics-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    margin: 12px 0 !important;
+  }
+
+  .admin-metrics-grid .glass-panel {
+    padding: 12px !important;
+  }
+
+  .admin-metrics-grid .stat-value {
+    font-size: 20px !important;
+    margin-top: 4px !important;
+  }
+
+  .filters-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    padding: 12px !important;
+  }
+
+  .filters-bar select {
+    width: 100% !important;
+  }
+
+  .map-wrapper {
+    height: 250px !important;
+  }
+
+  /* Swap desktop table for mobile cards */
+  .desktop-table-view {
+    display: none !important;
+  }
+
+  .mobile-cards-view {
+    display: flex !important;
+  }
+
+  /* Duplicate Analyzer Top Bar */
+  .analyzer-top-banner {
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 16px !important;
+  }
+
+  .analyzer-sample-btns {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .analyzer-sample-btns button {
+    width: 100% !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+    justify-content: center !important;
+  }
+
+  .verdict-banner-card {
+    padding: 14px !important;
+  }
+
+  .verdict-banner-card .meter-box {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}

@@ -272,48 +272,48 @@ const DuplicateAnalyzer = () => {
       
       {/* SECTION 1: TOP FORENSIC IMAGE AUTHENTICITY ANALYZER (AI vs REAL) */}
       <div className="glass-panel" style={{ padding: '24px', border: '1px solid rgba(249, 115, 22, 0.25)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span style={{ 
-                background: 'rgba(249, 115, 22, 0.2)', 
-                color: 'var(--accent-color)', 
-                padding: '4px 10px', 
-                borderRadius: '8px', 
-                fontSize: '12px', 
-                fontWeight: '700',
-                letterSpacing: '0.5px'
-              }}>
-                FORENSIC ENGINE v3.4
-              </span>
-              <h2 style={{ margin: 0, fontSize: '22px', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Sparkles size={22} style={{ color: 'var(--accent-color)' }} />
-                AI Image vs Real Camera Authenticity Analyzer
-              </h2>
-            </div>
-            <p style={{ margin: '8px 0 0 0', color: 'var(--text-muted)', fontSize: '14px', maxWidth: '750px' }}>
-              Upload any civic report photo. The forensic engine parses hardware EXIF, computes Error Level Analysis (ELA) re-compression heatmaps, extracts sensor shot noise (PRNU), and tests whether the image is genuine or synthesized by an AI (Midjourney, DALL-E, Stable Diffusion, Flux).
-            </p>
+        <div className="analyzer-top-banner" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ 
+              background: 'rgba(249, 115, 22, 0.2)', 
+              color: 'var(--accent-color)', 
+              padding: '4px 10px', 
+              borderRadius: '8px', 
+              fontSize: '12px', 
+              fontWeight: '700',
+              letterSpacing: '0.5px'
+            }}>
+              FORENSIC ENGINE v3.4
+            </span>
+            <h2 style={{ margin: 0, fontSize: '22px', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Sparkles size={22} style={{ color: 'var(--accent-color)' }} />
+              AI Image vs Real Camera Authenticity Analyzer
+            </h2>
           </div>
-
-          {/* Quick Sample Test Buttons */}
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-            <button 
-              className="btn-secondary" 
-              onClick={() => handleLoadSample('real')}
-              style={{ fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}
-            >
-              <Camera size={14} style={{ color: '#10b981' }} /> Test Real Camera Photo
-            </button>
-            <button 
-              className="btn-secondary" 
-              onClick={() => handleLoadSample('ai')}
-              style={{ fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}
-            >
-              <Sparkles size={14} style={{ color: '#ef4444' }} /> Test AI-Generated Image
-            </button>
-          </div>
+          <p style={{ margin: '8px 0 0 0', color: 'var(--text-muted)', fontSize: '14px', maxWidth: '750px' }}>
+            Upload any civic report photo. The forensic engine parses hardware EXIF, computes Error Level Analysis (ELA) re-compression heatmaps, extracts sensor shot noise (PRNU), and tests whether the image is genuine or synthesized by an AI (Midjourney, DALL-E, Stable Diffusion, Flux).
+          </p>
         </div>
+
+        {/* Quick Sample Test Buttons */}
+        <div className="analyzer-sample-btns" style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+          <button 
+            className="btn-secondary" 
+            onClick={() => handleLoadSample('real')}
+            style={{ fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}
+          >
+            <Camera size={14} style={{ color: '#10b981' }} /> Test Real Camera Photo
+          </button>
+          <button 
+            className="btn-secondary" 
+            onClick={() => handleLoadSample('ai')}
+            style={{ fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}
+          >
+            <Sparkles size={14} style={{ color: '#ef4444' }} /> Test AI-Generated Image
+          </button>
+        </div>
+      </div>
 
         {/* Upload Dropzone */}
         <div 
@@ -392,7 +392,7 @@ const DuplicateAnalyzer = () => {
           <div style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             
             {/* Primary Verdict Banner */}
-            <div style={{ 
+            <div className="verdict-banner-card" style={{ 
               padding: '20px', 
               borderRadius: '12px', 
               background: analysisResult.verdict === 'REAL_CAMERA' 
@@ -446,7 +446,7 @@ const DuplicateAnalyzer = () => {
               </div>
 
               {/* Confidence Meter */}
-              <div style={{ 
+              <div className="meter-box" style={{ 
                 minWidth: '220px', 
                 background: 'rgba(0,0,0,0.25)', 
                 padding: '14px', 
@@ -712,7 +712,7 @@ const DuplicateAnalyzer = () => {
       </div>
 
       {/* SECTION 2: MUNICIPAL GEOSPATIAL CLUSTERS OVERVIEW */}
-      <div className="glass-panel" style={{ padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="glass-panel analyzer-top-banner" style={{ padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
         <div>
           <h2 style={{ margin: '0 0 6px 0', fontSize: '20px', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Layers size={22} style={{ color: 'var(--accent-color)' }} />
@@ -722,7 +722,7 @@ const DuplicateAnalyzer = () => {
             Geospatial 50m proximity clustering and perceptual visual hashes prevent redundant civic maintenance dispatches.
           </p>
         </div>
-        <div style={{ display: 'flex', gap: '12px' }}>
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
           <button className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <FileSpreadsheet size={16} /> Export Matrix
           </button>
@@ -738,38 +738,38 @@ const DuplicateAnalyzer = () => {
         </div>
       </div>
 
-      {/* Metrics Row */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
-        <div className="glass-panel" style={{ padding: '20px' }}>
-          <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
+      {/* Metrics Row (Responsive 2x2 on Mobile) */}
+      <div className="admin-metrics-grid">
+        <div className="glass-panel" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
             Total Analyzed Reports
           </div>
-          <div style={{ fontSize: '28px', fontWeight: '700', marginTop: '8px' }}>100</div>
-          <div style={{ fontSize: '12px', color: '#10b981', marginTop: '4px' }}>100% Coverage (Thanjavur)</div>
+          <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', marginTop: '6px' }}>100</div>
+          <div style={{ fontSize: '11px', color: '#10b981', marginTop: '4px' }}>100% Coverage (Thanjavur)</div>
         </div>
 
-        <div className="glass-panel" style={{ padding: '20px' }}>
-          <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
+        <div className="glass-panel" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
             Clustered Duplicate Groups
           </div>
-          <div style={{ fontSize: '28px', fontWeight: '700', marginTop: '8px', color: '#eab308' }}>25 Clusters</div>
-          <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Avg 4 reports per cluster</div>
+          <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', marginTop: '6px', color: '#eab308' }}>25 Clusters</div>
+          <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Avg 4 reports/cluster</div>
         </div>
 
-        <div className="glass-panel" style={{ padding: '20px' }}>
-          <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
+        <div className="glass-panel" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
             Worker Hours Saved
           </div>
-          <div style={{ fontSize: '28px', fontWeight: '700', marginTop: '8px', color: '#10b981' }}>180+ Hours</div>
-          <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Prevented redundant dispatch</div>
+          <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', marginTop: '6px', color: '#10b981' }}>180+ Hours</div>
+          <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Prevented dispatch waste</div>
         </div>
 
-        <div className="glass-panel" style={{ padding: '20px' }}>
-          <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
+        <div className="glass-panel" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>
             Deduplication Accuracy
           </div>
-          <div style={{ fontSize: '28px', fontWeight: '700', marginTop: '8px', color: 'var(--accent-color)' }}>97.8%</div>
-          <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Verified by SSIM & GIS</div>
+          <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', marginTop: '6px', color: 'var(--accent-color)' }}>97.8%</div>
+          <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Verified SSIM & GIS</div>
         </div>
       </div>
 
@@ -780,7 +780,9 @@ const DuplicateAnalyzer = () => {
           <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', fontWeight: '600' }}>
             Detected High-Density Duplicate Clusters
           </h3>
-          <div className="table-responsive">
+
+          {/* Desktop Table View */}
+          <div className="desktop-table-view table-responsive">
             <table className="admin-table">
               <thead>
                 <tr>
@@ -822,6 +824,37 @@ const DuplicateAnalyzer = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile Cluster Cards View */}
+          <div className="mobile-cards-view">
+            {duplicateClusters.map((cluster) => (
+              <div 
+                key={cluster.clusterId}
+                className="mobile-cluster-card"
+                onClick={() => setSelectedCluster(cluster)}
+                style={{ 
+                  background: selectedCluster?.clusterId === cluster.clusterId ? 'rgba(249, 115, 22, 0.12)' : 'rgba(255, 255, 255, 0.03)',
+                  borderColor: selectedCluster?.clusterId === cluster.clusterId ? 'var(--accent-color)' : 'var(--border-color)'
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <strong style={{ color: 'var(--accent-color)', fontSize: '13px' }}>{cluster.clusterId}</strong>
+                  <span style={{ background: '#eab30822', color: '#eab308', padding: '2px 8px', borderRadius: '12px', fontWeight: '700', fontSize: '11px' }}>
+                    {cluster.reportsCount} Duplicates
+                  </span>
+                </div>
+                <div style={{ fontWeight: '700', fontSize: '14px', color: 'var(--text-main)' }}>
+                  {cluster.primaryIssue}
+                </div>
+                <div style={{ fontSize: '12px', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <MapPin size={12} style={{ color: 'var(--accent-color)' }} /> {cluster.locationName} ({cluster.distanceRadius})
+                </div>
+                <button className="btn-secondary" style={{ width: '100%', padding: '6px', fontSize: '12px', marginTop: '4px', justifyContent: 'center' }}>
+                  Inspect Cluster Details <ArrowRight size={12} style={{ marginLeft: '4px' }} />
+                </button>
+              </div>
+            ))}
           </div>
         </div>
 

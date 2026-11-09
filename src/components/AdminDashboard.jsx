@@ -131,26 +131,26 @@ const AdminDashboard = () => {
 
       <div className="dashboard-content">
         {/* Percentage Analytics Row */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', margin: '20px 0' }}>
-          <div className="glass-panel" style={{ padding: '18px' }}>
+        <div className="admin-metrics-grid">
+          <div className="glass-panel" style={{ padding: '16px' }}>
             <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>Overall Resolution Rate</div>
-            <div style={{ fontSize: '26px', fontWeight: '700', color: '#10b981', marginTop: '6px' }}>64.0%</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>64 of 100 resolved</div>
+            <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', color: '#10b981', marginTop: '6px' }}>64.0%</div>
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>64 of 100 resolved</div>
           </div>
-          <div className="glass-panel" style={{ padding: '18px' }}>
+          <div className="glass-panel" style={{ padding: '16px' }}>
             <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>High Priority Share</div>
-            <div style={{ fontSize: '26px', fontWeight: '700', color: '#ef4444', marginTop: '6px' }}>40.0%</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>40 Urgent tickets</div>
+            <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', color: '#ef4444', marginTop: '6px' }}>40.0%</div>
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>40 Urgent tickets</div>
           </div>
-          <div className="glass-panel" style={{ padding: '18px' }}>
+          <div className="glass-panel" style={{ padding: '16px' }}>
             <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>SLA On-Time Completion</div>
-            <div style={{ fontSize: '26px', fontWeight: '700', color: '#3b82f6', marginTop: '6px' }}>91.5%</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Within 24h SLA limit</div>
+            <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', color: '#3b82f6', marginTop: '6px' }}>91.5%</div>
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Within 24h SLA limit</div>
           </div>
-          <div className="glass-panel" style={{ padding: '18px' }}>
+          <div className="glass-panel" style={{ padding: '16px' }}>
             <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '600' }}>AI Verification Precision</div>
-            <div style={{ fontSize: '26px', fontWeight: '700', color: 'var(--accent-color)', marginTop: '6px' }}>96.2%</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>SSIM + YOLO consensus</div>
+            <div className="stat-value" style={{ fontSize: '26px', fontWeight: '700', color: 'var(--accent-color)', marginTop: '6px' }}>96.2%</div>
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>SSIM + YOLO consensus</div>
           </div>
         </div>
 
