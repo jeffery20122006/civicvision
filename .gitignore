@@ -1,8 +1,12 @@
 # Dependencies
 node_modules
 server/node_modules
+.vite/
 .env
 .env.local
+
+# Temporary downloads / scratch
+n/
 
 # Builds & Cache
 dist
