@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 import Logo from './Logo';
 
-export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onViewMap, onNavigate }) {
+export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onViewMap, onNavigate, isAuthenticated, currentUser, onLogout }) {
   return (
     <div style={{ background: '#0a0a0a', color: '#f8fafc', minHeight: '100vh', fontFamily: "'Inter', sans-serif" }}>
       
@@ -43,15 +43,51 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
             </button>
           </div>
 
-          {/* Authority Login Button */}
+          {/* User Status or Authority Login Button */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <button 
-              onClick={onAuthorityLogin}
-              className="btn-primary"
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px', borderRadius: '24px', fontSize: '13px' }}
-            >
-              <ShieldCheck size={15} /> Authority Login
-            </button>
+            {isAuthenticated && currentUser ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '6px', 
+                  background: 'rgba(255,255,255,0.06)', 
+                  border: '1px solid rgba(255,255,255,0.12)', 
+                  padding: '6px 12px', 
+                  borderRadius: '20px',
+                  fontSize: '12px'
+                }}>
+                  {currentUser.role === 'worker' ? (
+                    <HardHat size={14} style={{ color: '#38bdf8' }} />
+                  ) : (
+                    <User size={14} style={{ color: 'var(--accent-color)' }} />
+                  )}
+                  <span style={{ fontWeight: '600', color: '#fff' }}>{currentUser.name}</span>
+                </div>
+                <button 
+                  onClick={onLogout}
+                  style={{ 
+                    background: 'none', 
+                    border: '1px solid rgba(255,255,255,0.2)', 
+                    color: '#94a3b8', 
+                    padding: '6px 12px', 
+                    borderRadius: '20px', 
+                    fontSize: '12px', 
+                    cursor: 'pointer' 
+                  }}
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <button 
+                onClick={onAuthorityLogin}
+                className="btn-primary"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px', borderRadius: '24px', fontSize: '13px' }}
+              >
+                <ShieldCheck size={15} /> Authority Login
+              </button>
+            )}
           </div>
         </div>
       </nav>
@@ -258,9 +294,13 @@ export default function LandingHomePage({ onGetStarted, onAuthorityLogin, onView
 
           <div>© {new Date().getFullYear()} MAATRAM Smart Resolution Platform. All rights reserved.</div>
 
-          <div style={{ display: 'flex', gap: '16px' }}>
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
             <button onClick={() => onNavigate('reporter')} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '13px' }}>Citizen App</button>
-            <button onClick={onAuthorityLogin} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontWeight: '600', cursor: 'pointer', fontSize: '13px' }}>Authority Portal</button>
+            {isAuthenticated ? (
+              <button onClick={onLogout} style={{ background: 'none', border: 'none', color: '#ef4444', fontWeight: '600', cursor: 'pointer', fontSize: '13px' }}>Sign Out ({currentUser?.name})</button>
+            ) : (
+              <button onClick={onAuthorityLogin} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontWeight: '600', cursor: 'pointer', fontSize: '13px' }}>Authority Portal</button>
+            )}
           </div>
         </div>
       </footer>

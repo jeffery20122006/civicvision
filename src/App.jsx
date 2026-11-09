@@ -15,6 +15,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [showAuthSession, setShowAuthSession] = useState(false);
+  const [authInitialRole, setAuthInitialRole] = useState('worker');
 
   useEffect(() => {
     document.body.className = theme;
@@ -25,6 +26,14 @@ function App() {
   };
 
   const navigateTo = (newView) => {
+    // Restrict worker field session ONLY to people who login through field worker login
+    if (newView === 'worker') {
+      if (!isAuthenticated || currentUser?.role !== 'worker') {
+        setAuthInitialRole('worker');
+        setShowAuthSession(true);
+        return;
+      }
+    }
     if (newView !== view) {
       setViewHistory(prev => [...prev, newView]);
       setView(newView);
@@ -48,23 +57,28 @@ function App() {
     setIsAuthenticated(true);
     setShowAuthSession(false);
     if (user.role === 'worker') {
-      navigateTo('worker');
+      setViewHistory(prev => [...prev, 'worker']);
+      setView('worker');
     } else if (user.role === 'citizen') {
-      navigateTo('reporter');
+      setViewHistory(prev => [...prev, 'reporter']);
+      setView('reporter');
     } else {
-      navigateTo('admin');
+      setViewHistory(prev => [...prev, 'admin']);
+      setView('admin');
     }
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
     setIsAuthenticated(false);
+    setView('home');
   };
 
   // Dedicated Auth Session overlay when triggered
   if (showAuthSession) {
     return (
       <AuthSessionPage 
+        initialRole={authInitialRole}
         onLoginSuccess={handleLoginSuccess}
         onSwitchToApp={() => {
           setCurrentUser({ name: 'Guest User', role: 'citizen' });
@@ -80,8 +94,14 @@ function App() {
   if (view === 'home') {
     return (
       <LandingHomePage 
+        isAuthenticated={isAuthenticated}
+        currentUser={currentUser}
+        onLogout={handleLogout}
         onGetStarted={() => navigateTo('reporter')}
-        onAuthorityLogin={() => setShowAuthSession(true)}
+        onAuthorityLogin={() => {
+          setAuthInitialRole('worker');
+          setShowAuthSession(true);
+        }}
         onViewMap={() => navigateTo('admin')}
         onNavigate={(targetView) => {
           if (targetView === 'home') setView('home');
@@ -208,7 +228,10 @@ function App() {
             ) : (
               <button 
                 className="btn-primary"
-                onClick={() => setShowAuthSession(true)}
+                onClick={() => {
+                  setAuthInitialRole('worker');
+                  setShowAuthSession(true);
+                }}
                 style={{ padding: '8px 16px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '20px' }}
               >
                 <LogIn size={15} /> Authority Login
@@ -222,7 +245,31 @@ function App() {
           {view === 'reporter' && <CitizenReporter currentUser={currentUser} />}
           {view === 'admin' && <AdminDashboard />}
           {view === 'duplicates' && <DuplicateAnalyzer />}
-          {view === 'worker' && <WorkerView currentUser={currentUser} />}
+          {view === 'worker' && (
+            isAuthenticated && currentUser?.role === 'worker' ? (
+              <WorkerView currentUser={currentUser} />
+            ) : (
+              <div className="glass-panel" style={{ padding: '40px 20px', textAlign: 'center', maxWidth: '480px', margin: '40px auto' }}>
+                <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(2, 132, 199, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', color: '#0284c7' }}>
+                  <HardHat size={32} />
+                </div>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '20px', fontWeight: '700', color: '#fff' }}>Field Worker Access Required</h3>
+                <p style={{ margin: '0 0 24px 0', color: 'var(--text-muted)', fontSize: '13px', lineHeight: '1.5' }}>
+                  The worker field session is restricted to authorized field operations personnel. Please log in with your municipal field specialist credentials.
+                </p>
+                <button 
+                  className="btn-primary"
+                  onClick={() => {
+                    setAuthInitialRole('worker');
+                    setShowAuthSession(true);
+                  }}
+                  style={{ background: '#0284c7', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 24px', borderRadius: '10px', fontSize: '14px', fontWeight: '700' }}
+                >
+                  <HardHat size={16} /> Login as Field Worker
+                </button>
+              </div>
+            )
+          )}
         </main>
 
         {/* Mobile Bottom Navigation Bar (Phones <= 768px) */}
